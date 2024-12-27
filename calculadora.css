@@ -1,0 +1,115 @@
+*{
+        margin: 0 0 0 0;
+        padding: 0;
+}
+
+
+body{
+        background: linear-gradient(to right, white 40%, red 90%);
+        height: 90vw;
+        
+}
+
+
+input{
+        position: relative;
+        border: none;
+        color: black;
+        padding-top: 48px;
+        box-shadow: 0 0 30px black;
+        font-size: 29.7px;
+        padding-left: 4.8px;
+        outline: none;
+        text-align: center;
+}
+
+
+input::placeholder{
+        color: purple;
+        position: relative;
+        right: 70%;
+        font-size: 18px;
+        
+}
+
+
+.signo{
+
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        left: 80%;
+        grid-gap: 3%;
+        position: relative;
+        margin: 4px;
+}
+
+
+button{
+        
+        padding: 26px;
+        margin: 13px;
+        border-radius: 5px;
+        background: black;
+        color: #fff;
+}
+
+#resta{
+        padding-left: 27px;
+        position: relative;
+        left: 80%;
+}
+
+button:hover{
+        background: White;
+        border:solid 1px;
+        color: black;
+        border-color: black;
+}
+
+
+.numeros{
+        display: grid;
+        position: absolute;
+        bottom: 26%;
+        right: 50%;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        
+        grid-gap: 5%;
+        left: 10px;
+}
+
+
+h2{
+        position: absolute;
+        color: transparent;
+        animation: linea ease-in-out 1.3s infinite;
+        left: 50%;
+        bottom: 96%;
+}
+
+
+
+
+
+
+
+@keyframes linea{
+        
+        0%,20%{
+                color: transparent;
+        }
+        
+        25%,50%{
+                color: black;
+        }
+        
+        55%,75%{
+                color: transparent;
+        }
+        
+        80%,100%{
+                color: black;
+        }
+        
+}
