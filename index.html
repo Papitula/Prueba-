@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portafolio - Wandy Cruz</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Menú de Navegación -->
+  <header>
+    <nav class="navbar">
+      <div class="logo">
+        <img src="IMG-20240709-WA0032.jpg" alt="Logo">
+      </div>
+      <div class="btn-menu">
+        <button class="menu-toggle" onclick="menu_toggle()">
+          <img src="1486504328-bullet-list-menu-lines-points-items-options_81334.svg" class="menuIco" alt="Menú">
+        </button>
+      </div>
+      <ul class="nav-links" id="nav_links">
+        <li><a href="#home">Inicio</a></li>
+        <li><a href="#about">Sobre Mí</a></li>
+        <li><a href="#projects">Proyectos</a></li>
+        <li><a href="#skills">Habilidades</a></li>
+        <li><a href="#contact">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Pantalla de Inicio -->
+  <section class="home" id="home">
+    <div class="hero">
+      <h1>Hola, soy Wandy Cruz</h1>
+      <p>Desarrollador web | Diseñador UI/UX</p>
+    </div>
+  </section>
+
+  <!-- Sobre Mí -->
+  <section class="about" id="about">
+    <h2 class="encabesado">Sobre Mí</h2>
+    <p>Soy un desarrollador apasionado por crear soluciones digitales innovadoras 🌐. Aquí podrás ver algunos de mis proyectos y habilidades en desarrollo web, aplicaciones móviles y software 📱💻. ¡Gracias por visitar! 😊</p>
+  </section>
+
+  <!-- Proyectos -->
+  <section class="projects" id="projects">
+    <h2>Proyectos</h2>
+    <div class="project-container">
+      <div class="project-card">
+        <img src="traveler.jpeg" alt="Proyecto 1">
+        <h3>Nombre del Proyecto</h3>
+        <p>Breve descripción del proyecto...</p>
+        <a href="#" class="btn">Ver más</a>
+      </div>
+      <div class="project-card">
+        <img src="traveler.jpeg" alt="Proyecto 2">
+        <h3>Nombre del Proyecto</h3>
+        <p>Breve descripción del proyecto...</p>
+        <a href="#" class="btn">Ver más</a>
+      </div>
+      <div class="project-card">
+        <img src="traveler.jpeg" alt="Proyecto 3">
+        <h3>Nombre del Proyecto</h3>
+        <p>Breve descripción del proyecto...</p>
+        <a href="#" class="btn">Ver más</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Habilidades -->
+  <section class="skills" id="skills">
+    <h2>Habilidades</h2>
+    <ul>
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>JavaScript</li>
+    </ul>
+  </section>
+
+  <!-- Contacto -->
+  <section class="contact" id="contact">
+    <h2>Contacto</h2>
+    <form>
+      <input type="text" placeholder="Tu nombre" required>
+      <input type="email" placeholder="Tu correo" required>
+      <textarea placeholder="Mensaje" required></textarea>
+      <button type="submit">Enviar</button>
+    </form>
+  </section>
+
+  <!-- Pie de página -->
+  <footer>
+    <p>© 2024 Wandy Cruz. Todos los derechos reservados.</p>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
