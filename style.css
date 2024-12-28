@@ -77,9 +77,10 @@ img {
   z-index: 10000;
   overflow-y: auto;
   max-height: 0;
-  transition: max-height 1s ease-in-out;
+  transition: max-height .5s ease-in-out;
   overflow: hidden;
   height: auto;
+  width: 40%;
 }
 
 .nav-links.show {
@@ -107,7 +108,7 @@ img {
 .home {
   text-align: center;
   padding: 100px 20px 20px;
-  background-image: url('professional-programmer-working-late-dark-office.jpg');
+  background-image: url('file-2TDjkp6EPK88N1uB2kQpdW.webp ');
   background-size: cover;
   color: white;
 }
@@ -210,10 +211,8 @@ footer {
   border-radius: 10px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
   text-align: center;
-  position: relative;
-  left: 11%;
-  margin-bottom: 20px;
-  margin-top: 20px;
+  margin: 20px auto;
+  position: static;
 }
 
 .mini-contact-form h2 {
@@ -262,3 +261,8 @@ footer {
 }
 
 
+@media (max-width: 768px) {
+    .project-container {
+        padding-bottom: 30%;
+    }
+}
