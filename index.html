@@ -12,21 +12,21 @@
   <!-- Menú de Navegación -->
   <header>
     <nav class="navbar">
-      <div class="logo">
-        <img src="IMG-20240709-WA0032.jpg" alt="Logo">
-      </div>
       <div class="btn-menu">
         <button class="menu-toggle" onclick="menu_toggle()">
           <img src="1486504328-bullet-list-menu-lines-points-items-options_81334.svg" class="menuIco" alt="Menú">
         </button>
       </div>
       <ul class="nav-links" id="nav_links">
-        <li><a href="#home">Inicio</a></li>
-        <li><a href="#about">Sobre Mí</a></li>
-        <li><a href="#projects">Proyectos</a></li>
-        <li><a href="#skills">Habilidades</a></li>
-        <li><a href="#contact">Contacto</a></li>
+        <li id="lista"><a href="#home">Inicio</a></li>
+        <li id="lista"><a href="#about">Sobre Mí</a></li>
+        <li ud="lista"><a href="#projects">Proyectos</a></li>
+        <li id="lista"><a href="#tegno">Habilidades</a></li>
+        <li id="lista"><a href="#contacto">Contacto</a></li>
       </ul>
+      <div class="logo">
+        <img src="20241227_194101.jpg" alt="Logo">
+      </div>
     </nav>
   </header>
 
@@ -49,7 +49,7 @@
     <h2>Proyectos</h2>
     <div class="project-container">
       <div class="project-card">
-        <img src="traveler.jpeg" alt="Proyecto 1">
+        <img src="traveler.jpeg" alt="Proyecto 1" id="progetUno">
         <h3>Nombre del Proyecto</h3>
         <p>Breve descripción del proyecto...</p>
         <a href="#" class="btn">Ver más</a>
@@ -69,36 +69,41 @@
     </div>
   </section>
 
-  <!-- Habilidades -->
-  <section class="skills" id="skills">
-    <h2>Habilidades</h2>
-    <ul>
-      <li>HTML</li>
-      <img src="icons8-html.svg" class="tegnologia" alt="">
-      
-      <li>CSS</li>
-      <img src="icons8-css.svg" class="tegnologia" alt="">
-      
-      <li>JavaScript</li>
-      <img src="icons8-javascript.svg" class="tegnologia"alt="">
-      
-      <li>MySQL></li>
-      <img src="icons8-mysql.svg" class="tegnologia"alt="">
-      
-      <li>Bostrap</li>
-          <img src="icons8-oreja.svg" class="tegnologia" alt="">
-    </ul>
-  </section>
 
-  <!-- Contacto -->
-  <div class="mini-contact-form">
-        <h2>Contáctame</h2>
-        <form action="#" method="post">
-                <input type="text" name="name" placeholder="Nombre" required>
-                <input type="email" name="email" placeholder="Correo" required>
-                <button type="submit">Enviar</button>
-        </form>
-</div>
+  <!-- Tecnologías -->
+  <div class="tecnologias" id="tegno">
+    <div class="tecnologia">
+      <img src=" icons8-html.svg" alt="HTML">
+      <span>HTML</span>
+    </div>
+    <div class="tecnologia">
+      <img src="icons8-css.svg" alt="CSS">
+      <span>CSS</span>
+    </div>
+    <div class="tecnologia">
+      <img src=" icons8-javascript.svg " alt="JavaScript">
+      <span>JavaScript</span>
+    </div>
+    <div class="tecnologia">
+      <img src="icons8-mysql.svg " alt="MySQL">
+      <span>MySQL</span>
+    </div>
+    <div class="tecnologia">
+      <img src="icons8-oreja.svg" alt="Boostrap">
+      <span>Boostrap</span>
+    </div>
+  </div>
+</section>
+  
+  <!-- Formulario de contacto -->
+  <div class="mini-contact-form" id="contacto">
+    <h2>Contáctame</h2>
+    <form action="#" method="post">
+      <input type="text" name="name" placeholder="Nombre" required>
+      <input type="email" name="email" placeholder="Correo" required>
+      <button type="submit">Enviar</button>
+    </form>
+  </div>
 
   <!-- Pie de página -->
   <footer>

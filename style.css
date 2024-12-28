@@ -13,24 +13,20 @@ header {
   position: fixed;
   width: 100%;
   background: linear-gradient(135deg, #1E2A47, #4A3D75);
-
-;
-
-
-
- ;
   color: white;
   padding: 10px 20px;
-  height: 10%;
+  height: 60px;
   border-bottom: 1px solid white;
-  z-index: 10000;
+  z-index: 1000;
 }
 
 .navbar {
   display: flex;
+  justify-content: space-between;
   align-items: center;
 }
 
+/* Logo */
 .logo {
   width: 60px;
   height: 60px;
@@ -39,8 +35,8 @@ header {
   object-fit: cover;
   border: 2px solid #000;
   box-shadow: 0 4px 6px rgba(0, 0, 0.1);
- 
-  
+  position: relative;
+  right: 10%;
 }
 
 img {
@@ -49,28 +45,31 @@ img {
   object-fit: cover;
 }
 
-.menuIco {
-  width: 30%;
-  height: 30%;
-}
-
+/* Botón del menú */
 .btn-menu {
-  width: 40%;
-  height: 40%;
-  position: relative;
-  left: 50%;
-  z-index: 1000;
-  border-radius: 100px;
- 
+  background: none;
+  border: none;
+  width: 50px;
+  height: 50px;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
+.menuIco {
+  width: 100%;
+  height: 100%;
+}
+
+/* Menú desplegable */
 .nav-links {
   list-style: none;
   padding: 0;
   display: flex;
   flex-direction: column;
   gap: 10px;
-  background: #2C3E50;
+  background: linear-gradient(135deg, #1E2A47, #4A3D75);
   position: absolute;
   top: 80%;
   right: 0;
@@ -80,7 +79,7 @@ img {
   max-height: 0;
   transition: max-height 1s ease-in-out;
   overflow: hidden;
-  height: 100rem;
+  height: auto;
 }
 
 .nav-links.show {
@@ -89,7 +88,7 @@ img {
 }
 
 .nav-links li {
-  text-align: center;
+  text-align: left;
 }
 
 .nav-links a {
@@ -107,7 +106,7 @@ img {
 /* Hero Section */
 .home {
   text-align: center;
-  padding: 100px 20px 20px; /* Espacio para el header */
+  padding: 100px 20px 20px;
   background-image: url('professional-programmer-working-late-dark-office.jpg');
   background-size: cover;
   color: white;
@@ -122,18 +121,18 @@ img {
 /* Proyectos */
 .project-container {
   display: flex;
-  overflow-x: auto; /* Permite el desplazamiento horizontal */
-  gap: 20px; /* Espacio entre los elementos */
-  width: 100%; /* Asegura que el contenedor ocupe todo el ancho disponible */
-  height: auto; /* Deja que la altura se ajuste según el contenido */
+  overflow-x: auto;
+  gap: 20px;
+  width: 100%;
+  height: auto;
   padding-bottom: 30%;
-  box-sizing: border-box; /* Asegura que el padding no afecte al tamaño total */
+  box-sizing: border-box;
   margin-bottom: 15px;
 }
 
 .project-card {
-  min-width: 300px; /* Controla el tamaño mínimo de cada tarjeta de proyecto */
-  background-color:#7f2020 ; /* Un color de fondo para las tarjetas */
+  min-width: 300px;
+  background-color: #7f2020;
   padding: 10px;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -143,7 +142,6 @@ img {
   box-shadow: 0 4px 6px #B3B3B3;
 }
 
-/* Opcional: mejora la experiencia al pasar el mouse sobre las tarjetas */
 .project-card:hover {
   transform: scale(1.05);
 }
@@ -161,70 +159,106 @@ footer {
   border-bottom: 1px solid #7f2020;
 }
 
-/*tegnologias*/
-.tegnologia{
-        width: 10%;
-        height: 10%;
-         gap: 30%;
-        left: 25%;
+/* Tecnologías */
+.tegnologia {
+  width: 10%;
+  height: 10%;
+  gap: 30%;
+  left: 25%;
 }
 
+
+/* Contenedor de Tecnologías */
+.tecnologias {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+}
+
+.tecnologia {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 10px;
+  width: 100px;
+}
+
+.tecnologia img {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+}
+
+.tecnologia span {
+  font-size: 14px;
+  color: white;
+}
+
+
+
+
+/* Formulario de contacto */
 .mini-contact-form {
-        width: 90%;
-        max-width: 300px;
-        background-color: #2A2A2A;
-        padding: 15px;
-        border-radius: 10px;
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
-        text-align: center;
-        position:relative;
-        left:11%; 
-        margin-bottom: 20px;
-        margin-top:20px;
+  width: 90%;
+  max-width: 300px;
+  background-color: #2A2A2A;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  position: relative;
+  left: 11%;
+  margin-bottom: 20px;
+  margin-top: 20px;
 }
 
 .mini-contact-form h2 {
-        font-size: 18px;
-        margin-bottom: 15px;
-        color: #D64072;
+  font-size: 18px;
+  margin-bottom: 15px;
+  color: #D64072;
 }
 
 .mini-contact-form form {
-        display: flex;
-        flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .mini-contact-form input {
-        margin-bottom: 10px;
-        padding: 10px;
-        border: none;
-        border-radius: 5px;
-        font-size: 14px;
-        background-color: #333333;
-        color: #FFFFFF;
+  margin-bottom: 10px;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  font-size: 14px;
+  background-color: #333333;
+  color: #FFFFFF;
 }
 
 .mini-contact-form input::placeholder {
-        color: #B3B3B3;
+  color: #B3B3B3;
 }
 
 .mini-contact-form button {
-        padding: 10px;
-        background-color: #33B49D;
-        color: #FFFFFF;
-        border: none;
-        border-radius: 5px;
-        font-size: 14px;
-        cursor: pointer;
-        transition: background-color 0.3s;
+  padding: 10px;
+  background-color: #33B49D;
+  color: #FFFFFF;
+  border: none;
+  border-radius: 5px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s;
 }
 
 .mini-contact-form button:hover {
-        background-color: #28A086;
+  background-color: #28A086;
 }
 
-.btn{
-    text-decoration: none;
-    color:#7f2020;
-    
+.btn {
+  text-decoration: none;
+  color: #7f2020;
 }
+
+
